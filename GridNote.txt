@@ -1,0 +1,17 @@
+Pour indiquer le nombre de colonnes :
+grid-template-columns: 30% 20% 10%;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-colunms: repeat(9,1fr);
+grid-column-gap: val px;
+Pour indiquer le nombre des lignes:
+
+Pour fixer le taille de la ligne : 
+grid-auto-rows: nb px; mais avec cette ligne si on a un contenu larg il va être copier donc on peux utiliser :
+grid-auto-rows: nminmax(200px,auto);
+et aussi on peux identifier le taille de chaque ligne indépendamment : 
+grid-template-rows:nb1 px nb2 px .. ; 
+ aussi on peux utiliser : 
+grid-template-rows: repeat(3,200px/minmax(minval, maxval/auto)); 
+pour ajouter un espace entre les lignes :
+grid-row-gap: val px;
+ Remarque pour modifier l'espace entre les lignes et les colonnes au même temps acev la même valeurs: grid-gap: Val px;
